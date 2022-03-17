@@ -4,18 +4,21 @@ using Avalonia.Markup.Xaml;
 
 namespace Lab5.Views
 {
-    public partial class NoMainWindow : Window{
-        public NoMainWindow(string OldRegex) : this(){
+    public partial class NoMainWindow : Window
+    {
+        public NoMainWindow(string OldRegex) : this()
+        {
             this.FindControl<TextBox>("RegexInput").Text = OldRegex;
         }
 
-        public NoMainWindow(){
+        public NoMainWindow()
+        {
             InitializeComponent();
 #if DEBUG
             this.AttachDevTools();
 #endif
 
-            this.FindControl<Button>("RegexC").Click += delegate{
+            this.FindControl<Button>("RegexC").Click += delegate {
                 var regexStr = this.FindControl<TextBox>("RegexInput").Text;
                 if (regexStr != null)
                     Close(regexStr);
@@ -23,13 +26,14 @@ namespace Lab5.Views
                     Close("");
             };
 
-            this.FindControl<Button>("RegexOutput").Click += delegate{
+            this.FindControl<Button>("RegexOutput").Click += delegate {
                 Close("");
             };
         }
 
 
-        private void InitializeComponent(){
+        private void InitializeComponent()
+        {
             AvaloniaXamlLoader.Load(this);
         }
     }

@@ -8,7 +8,7 @@
         Title="NoMainWindow">
 	<WrapPanel>
 		<TextBox Name="RegexInput" Height="30" Width="400"></TextBox>
-			<Button Name="RegexC" Height="30" Width="400" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Ok</Button>
-			<Button Name="RegexOutput" Height="30" Width="400" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Cancel</Button>
+		<Button Name="RegexC" Height="30" Width="400" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Ok</Button>
+		<Button Name="RegexOutput" Height="30" Width="400" VerticalContentAlignment="Center" HorizontalContentAlignment="Center">Cancel</Button>
 	</WrapPanel>
 </Window>
