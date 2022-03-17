@@ -4,14 +4,14 @@ using Avalonia.Markup.Xaml;
 
 namespace Lab5.Views
 {
-    public partial class NoMainWindow : Window
+    public partial class RegexWindow : Window
     {
-        public NoMainWindow(string OldRegex) : this()
+        public RegexWindow(string OldRegex) : this()
         {
             this.FindControl<TextBox>("RegexInput").Text = OldRegex;
         }
 
-        public NoMainWindow()
+        public RegexWindow()
         {
             InitializeComponent();
 #if DEBUG

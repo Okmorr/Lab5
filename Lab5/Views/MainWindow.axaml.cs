@@ -30,7 +30,7 @@ namespace Lab5.Views
 
 			this.FindControl<Button>("SetRegexDialog").Click += async delegate{
 				var context = this.DataContext as MainWindowViewModel;
-				string? regex = await new NoMainWindow(context.Regex).ShowDialog<string>((Window)this.VisualRoot);
+				string? regex = await new RegexWindow(context.Regex).ShowDialog<string>((Window)this.VisualRoot);
 				context.Regex = regex;
 
 				context.Input = context.Input;
